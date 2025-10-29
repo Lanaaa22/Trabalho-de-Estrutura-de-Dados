@@ -1,21 +1,12 @@
-#include "tad_time.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../extrairArq.h"
 
-struct time {
-    int id; //id dos times
-    char nome[50]; //nome do time
-};
-
-
-
-
-/*
-void extraiArquivoTime() {
-    FILE *file = fopen("arquivos/times.csv", "r");
+void extraiArquivo(const char *nome) {
     char ch; 
+    char caminho[100]; //vetor para armazenar o caminho da
+    strcat(strcpy(caminho, "arquivos/"), nome);
+    FILE *file = fopen(caminho, "r");
     //int qtd = contatimes(l); //fazer depois uma função que conte a quantidade de times no CSV
     //Time *times = (Time *)malloc(sizeof(Time) * qtd);
     if (file == NULL)
@@ -25,7 +16,7 @@ void extraiArquivoTime() {
     }
     while ((ch = fgetc(file)) != EOF) {
         printf("%c", ch);
+        //fazer os berecuteco top
     }
     fclose(file);
 }
-*/

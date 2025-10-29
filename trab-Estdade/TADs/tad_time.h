@@ -4,5 +4,4 @@
 //Definição do dado Time para representar uma informação de time
 typedef struct time Time;
 
-
 #endif

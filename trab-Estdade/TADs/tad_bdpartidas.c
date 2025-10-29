@@ -1,5 +1,5 @@
 #include "tad_bdpartidas.h"
-#include "tad_partida.h"
+#include "tad_partida.c"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,4 +11,4 @@ struct bdpartida {
     int qtd;
 };
 
-//Corrigir
+
